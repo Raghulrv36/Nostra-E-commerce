@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/lib/index.min.js"></script>
+</head>
+<body>
+    <!-- offer bar -->
+    <div id="offer-bar" class="bg-gray-800 text-white p-2 text-xl text-center flex justify-center">
+        <p>Sign Up and <b>Get 20% OFF</b> for your first order
+         <i id="offer-close" class="fa-solid fa-xmark cursor-pointer pl-5"></i></p>
+     </div>
+     <!-- Nav bar -->
+     <nav class="flex gap-5 justify-between items-center px-5 py-[1vw] text-gray-800 sticky top-0 bg-white z-10">
+        <h1 class="text-3xl font-bold ">Nostra</h1>
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        <ul class = " w-1/2 items-center justify-around font-medium cursor-pointer hidden md:flex">
+            <li><a href="index.html" class="hover:underline">Home</a></li>
+            <li><a href="#NewArrival" class="hover:underline">New Arrival</a></li>
+            <li><a href="#MostWanted" class="hover:underline">Most Wanted</a></li>
+            <li><a href="collections.html" class="hover:underline">Collections</a></li>
+            <li><a class="hover:underline" href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <!-- Side Navbar -->
+    <section id="sidenav" class="bg-gray-800 fixed z-20 top-0 transition-all duration-1000" style="width: 50%;height: 100%;left: -50%;">
+        <div class="text-right p-5 text-white">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 items-center text-white">
+            <li>
+                <a class="hover:underline hover:text-white" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-white" href="#NewArrival">New Arrival</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-white" href="#MostWanted">Most Wanted</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-white" href="collections.html">Collections</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-white" href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+      </section>
+
+      <!-- Collection -->
+      <!-- Filter Section -->
+      <section>
+        <div class="collections grid grid-flow-col px-10 py-10 gap-2">
+            <div class="collection__s1 border-r-2 border-black sm:p-[10px_20px]">
+                <div class="container md:text-2xl">
+                    <h3 class="md:text-3xl font-bold p-1">Occasion</h3>
+                    <input type="checkbox" name="check" value="summer">Summer <br>
+                    <input type="checkbox" name="check" value="party">Party <br>
+                    <input type="checkbox" name="check" value="beach">Beach <br>
+                    <h3 class="md:text-3xl font-bold p-1">Colors</h3>
+                    <input type="checkbox" name="check" value="red">Red <br>
+                    <input type="checkbox" name="check" value="blue">Blue <br>
+                    <input type="checkbox" name="check" value="white">White <br>
+                    <input type="checkbox" name="check" value="green">Green <br>
+                    <h3 class="md:text-3xl font-bold p-1">Arrivals</h3>
+                    <input type="checkbox" name="check" value="new">New <br>
+                    <input type="checkbox" name="check" value="old">Old <br>
+                </div>
+            </div>
+            <!-- price -->
+            
+            <div class="collection__s2 w-full p-2">
+                <form class="navbar-search mb-4">
+                    <div class="flex">
+                        <input type="search" placeholder="Search" class="w-full p-2 border border-gray-300 rounded-l-md">
+                        <button type="submit" class="p-2 bg-gray-300 rounded-r-md">
+                            <img class="h-6 w-6" src="./images/search.png" alt="Search">
+                        </button>
+                    </div>
+                </form>
+            <div class=" grid grid-cols-3 gap-2 p-2">
+                <div class="collection_items text-justify">
+                    <img src="./images/Most wanted -1.png" alt="">
+                    <h3 class="md:text-2xl font-bold ">Summer Red</h3>
+                    <p>&#8377;1360</p>
+                </div>
+                <div class="collection_items text-justify">
+                    <img src="./images/Most wanted -2.png" alt="">
+                    <h3 class="md:text-2xl font-bold">Party Red</h3>
+                    <p>&#8377;1550</p>
+                </div>
+                <div class="collection_items text-justify">
+                    <img src="./images/Most wanted - 3.png" alt="">
+                    <h3 class="md:text-2xl font-bold">Party White</h3>
+                    <p>&#8377;1999</p>
+                </div>
+                <div class="collection_items text-justify">
+                    <img src="./images/Most wanted - 4.png" alt="">
+                    <h3 class="md:text-2xl font-bold">Beach White</h3>
+                    <p>&#8377;1299</p>
+                </div>
+                <div class="collection_items text-justify">
+                    <img src="./images/Most wanted - 5.png" alt="">
+                    <h3 class="md:text-2xl font-bold">Beach Blue</h3>
+                    <p>&#8377;1290</p>
+                </div>
+                <div class="collection_items text-justify">
+                    <img src="./images/shirt-1.png" alt="">
+                    <h3 class="md:text-2xl font-bold">Party Yellow White</h3>
+                    <p>&#8377;1199</p>
+                </div>
+                <div class="collection_items text-justify">
+                    <img src="./images/shirt-2.png" alt="">
+                    <h3 class="md:text-2xl font-bold">Summer Green</h3>
+                    <p>&#8377;1490</p>
+                </div>
+                <div class="collection_items text-justify">
+                    <img src="./images/shirt-3.png" alt="">
+                    <h3 class="md:text-2xl font-bold">Party Green</h3>
+                    <p>&#8377;1499</p>
+                </div>
+                <div class="collection_items text-justify">
+                    <img src="./images/shirt-4.png" alt="">
+                    <h3 class="md:text-2xl font-bold">Beach White Black</h3>
+                    <p>&#8377;1090</p>
+                </div>
+
+            </div>
+        </div>
+
+        </div>
+      </section>
+
+      <!-- News letter -->
+ <section class="text-center flex flex-col justify-between items-center font-bold">
+    <h1 class="text-3xl font-bold mt-5 text-center">Join our News Letter</h1>
+    <p>Signup for our email newspaper to get exclusive discounts, updates and more</p>
+    <input type="text" class="border border-black p-2 m-3" style="width: 80%;"><br>
+    <button class="bg-black text-white p-2 m-1 flex justify-center rounded text-xl">Subscribe<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="md:h-4 w-4 mx-1 my-2 font-bold">
+      <path fill-rule="evenodd" d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+      </svg></button>
+  </section>
+
+  <!-- Footer -->
+<section class="bg-gray-800 p-10 flex flex-col gap-5 text-white font-bold md:text-2xl mt-6">
+    <h1 class="text-4xl font-bold ">Nostra</h1>
+    <p>The Standard Chunk of Lorem ipsum used since 1500s is reproduced below for those interest</p>
+    <div class="flex gap-20">
+      <img class="h-6 w-6" src="./images/instagram (1).png" alt="">
+      <img class="h-6 w-6" src="./images/twitter (2).png" alt="">
+      <img class="h-6 w-6" src="./images/facebook.png" alt="">
+    </div>
+    <p>@ 2023 Nostra.com</p>
+   </section>
+
+      
+     <script src="./collections.js"></script>
+</body>
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <!-- style links -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- offer bar -->
+     
+     <div id="offer-bar" class="bg-gray-800 text-white p-2 text-xl text-center flex justify-center">
+        <p>Sign Up and <b>Get 20% OFF</b> for your first order
+         <i id="offer-close" class="fa-solid fa-xmark cursor-pointer pl-5"></i></p>
+        
+     </div>
+
+        <!-- Nav bar -->
+        <nav class="flex flex-wrap justify-between items-center px-5 py-3 text-gray-800 sticky top-0 bg-white z-30">
+            <h1 class="text-3xl font-bold ">Nostra</h1>
+            <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6 md:hidden">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+              <ul class="w-full md:w-1/2 flex flex-col md:flex-row items-center justify-around font-medium cursor-pointer hidden md:flex">
+                <li><a href="index.html" class="hover:underline">Home</a></li>
+                <li><a href="#NewArrival" class="hover:underline">New Arrival</a></li>
+                <li><a href="#MostWanted" class="hover:underline">Most Wanted</a></li>
+                <li><a href="collections.html" class="hover:underline">Collections</a></li>
+                <li><a class="hover:underline" href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+         <!-- Side Navbar -->
+          
+      <section id="sidenav" class="bg-gray-800 fixed z-40 top-0 transition-all duration-1000" style="width: 50%;height: 100%;left: -50%;">
+        <div class="text-right p-5 text-white">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 items-center text-white">
+            <li>
+                <a class="hover:underline hover:text-white" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-white" href="#NewArrival">New Arrival</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-white" href="#MostWanted">Most Wanted</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-white" href="collections.html">Collections</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-white" href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+      </section>
+
+      <!-- Img slider -->
+      <div id="slider" class="text-center relative p-2 flex justify-center items-center flex-col">
+        <div class="flex gap-5 justify-center items-center absolute z-1 text-white">
+            <div class="flex flex-row items-center ">
+                <button onclick="previous()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-28 w-28">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"  />
+                      </svg>
+                </button>
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-28 w-28">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"  />
+                  </svg> -->
+            </div>
+            <div class="flex flex-col items-center p-2">
+                <h1 class="text-2xl sm:text-3xl md:text-5xl font-bold">Level up your style with our</h1>
+                <h4 class="text-lg sm:text-xl md:text-3xl font-bold p-2">Summer Collections</h4>
+                <div class ="flex flex-col items-center p-2">
+                <button class="flex border border-black rounded shadow-lg px-3 py-1 sm:px-4 sm:py-2 text-black bg-white">Shop Now<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4 ml-1 mt-1.5 font-bold">
+                    <path fill-rule="evenodd" d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                  </svg>
+                  </button>
+                </div>
+            </div>
+            <!-- <div class="flex flex-row items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-28 w-28">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                  </svg>
+            </div> -->
+            <div class="flex flex-row items-center">
+                <button onclick="next()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-28 w-28">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                      </svg>
+                </button>
+            </div>
+        </div>
+          <img class="w-full border rounded" src="/images/slider-1.jpg" alt="">
+          <img class="w-full border rounded hidden" src="./images/slider img.jpg" alt="">
+          <img class="w-full border rounded hidden" src="/images/slider-1.jpg" alt="">
+        <!-- <img class="w-full border rounded" src="/images/slider-1.jpg" alt="">
+        <img class="w-full border rounded hidden" src="./images/slider img.jpg" alt="">
+        <img class="w-full border rounded hidden" src="/images/slider-1.jpg" alt=""> -->
+    </div>
+
+    <div class="p-6 font-bold text-xl">
+        <h1 class="text-3xl md:text-4xl">Brands</h1>
+        <ul class="flex flex-wrap justify-between p-4">
+            <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 font-bold">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0 1 12 21 8.25 8.25 0 0 1 6.038 7.047 8.287 8.287 0 0 0 9 9.601a8.983 8.983 0 0 1 3.361-6.867 8.21 8.21 0 0 0 3 2.48Z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 0 0 .495-7.468 5.99 5.99 0 0 0-1.925 3.547 5.975 5.975 0 0 1-2.133-1.001A3.75 3.75 0 0 0 12 18Z" />
+              </svg>
+              <span class="ml-2 text-sm md:text-base lg:text-lg">Puma</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 font-bold">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
+                  </svg>
+                  <span class="ml-2 text-sm md:text-base lg:text-lg">Adidas</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 font-bold">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+                  </svg>
+                  
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 font-bold">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 0 1-1.161.886l-.143.048a1.107 1.107 0 0 0-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 0 1-1.652.928l-.679-.906a1.125 1.125 0 0 0-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 0 0-8.862 12.872M12.75 3.031a9 9 0 0 1 6.69 14.036m0 0-.177-.529A2.25 2.25 0 0 0 17.128 15H16.5l-.324-.324a1.453 1.453 0 0 0-2.328.377l-.036.073a1.586 1.586 0 0 1-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 0 1-5.276 3.67m0 0a9 9 0 0 1-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25" />
+                  </svg>
+                  <span class="ml-2 text-sm md:text-base lg:text-lg">Leaves</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 font-bold">
+                    <path stroke-linejoin="round" d="M6.75 3.744h-.753v8.25h7.125a4.125 4.125 0 0 0 0-8.25H6.75Zm0 0v.38m0 16.122h6.747a4.5 4.5 0 0 0 0-9.001h-7.5v9h.753Zm0 0v-.37m0-15.751h6a3.75 3.75 0 1 1 0 7.5h-6m0-7.5v7.5m0 0v8.25m0-8.25h6.375a4.125 4.125 0 0 1 0 8.25H6.75m.747-15.38h4.875a3.375 3.375 0 0 1 0 6.75H7.497v-6.75Zm0 7.5h5.25a3.75 3.75 0 0 1 0 7.5h-5.25v-7.5Z" />
+                  </svg>
+                <span class="ml-2 text-sm md:text-base lg:text-lg">Behance</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 font-bold">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+                  </svg>
+                 <span class="ml-2 text-sm md:text-base lg:text-lg">Twitch</span> 
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12 font-bold">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 0 1-1.161.886l-.143.048a1.107 1.107 0 0 0-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 0 1-1.652.928l-.679-.906a1.125 1.125 0 0 0-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 0 0-8.862 12.872M12.75 3.031a9 9 0 0 1 6.69 14.036m0 0-.177-.529A2.25 2.25 0 0 0 17.128 15H16.5l-.324-.324a1.453 1.453 0 0 0-2.328.377l-.036.073a1.586 1.586 0 0 1-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 0 1-5.276 3.67m0 0a9 9 0 0 1-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25" />
+                  </svg>
+                <span class="ml-2 text-sm md:text-base lg:text-lg">Leaves</span>
+              </li>
+        </ul>
+    </div>
+    <div class="flex flex-row md:flex-row justify-between p-4 text-xl gap-4"> 
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold">We Provide Best <br>
+            Customer Experiences</h2>
+        <p class="mt-2 text-sm md:text-base lg:text-lg">||We ensure that our customer have the best shopping experience</p>
+
+    </div>
+
+    <div class="p-4">
+        <ul class="flex justify-between gap-2">
+            <li class="bg-gray-100 border rounded p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h10 w-10 font-bold">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                  </svg>                  
+                <b>Original Products</b> <br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.
+            </li>
+            <li class="bg-gray-100 border rounded p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h10 w-10 font-bold">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
+                  </svg>                  
+                <b>Satisfaction Guarantee</b> <br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.
+            </li>
+            <li class="bg-gray-100 border rounded p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h10 w-10 font-bold">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                  </svg> 
+                <b>New Arrival Everyday</b> <br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.
+            </li>
+            <li class="bg-gray-100 border rounded p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h10 w-10 font-bold">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+                  </svg>                  
+                <b>Fast & Free Shipping</b> <br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, consequuntur.
+            </li>
+
+        </ul>
+    </div>
+      <!-- New arrivals -->
+    <section id="NewArrival" class="p-4">
+        <h2 class="text-3xl font-bold">New Arrivals</h2>
+    <div class="grid grid-cols-4 mt-5 gap-5 justify-evenly">
+        
+        <div class="relative">
+            <img class="border rounded opacity-75" src="./images/shirt-1.png" alt="">
+            <div class ="flex flex-col items-center p-2 absolute top-24 left-8 bottom-24 z-1 justify-between ">
+                <button class="flex border rounded-lg shadow-lg px-4 py-1 text-black bg-white md:flex hidden">Shop Now<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4 ml-1 mt-1.5 font-bold">
+                    <path fill-rule="evenodd" d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                  </svg>
+                  </button>
+                </div>
+        </div>
+        <div class="relative">
+            <img class="border rounded opacity-75" src="./images/shirt-2.png" alt="">
+            <div class ="flex flex-col items-center p-2 absolute top-24 left-8 bottom-24 z-1 justify-between">
+                <button class="flex border rounded-lg shadow-lg px-4 py-1 text-black bg-white md:flex hidden">Shop Now<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4 ml-1 mt-1.5 font-bold">
+                    <path fill-rule="evenodd" d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                  </svg>
+                  </button>
+                </div>
+        </div>
+        <div class="relative">
+            <img class="border rounded opacity-75" src="./images/shirt-3.png" alt="">
+            <div class ="flex flex-col items-center p-2 absolute top-24 left-8 bottom-24 z-1 justify-between md:flex hidden">
+                <button class="flex border rounded-lg shadow-lg px-4 py-1 text-black bg-white">Shop Now<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4 ml-1 mt-1.5 font-bold">
+                    <path fill-rule="evenodd" d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                  </svg>
+                  </button>
+                </div>
+        </div>
+        <div class="relative">
+            <img class="border rounded opacity-75" src="./images/shirt-4.png" alt="">
+            <div class ="flex flex-col items-center p-2 absolute top-24 left-8 bottom-24 z-1 justify-between md:flex hidden">
+                <button class="flex border rounded-lg shadow-lg px-4 py-1 text-black bg-white">Shop Now<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4 ml-1 mt-1.5 font-bold">
+                    <path fill-rule="evenodd" d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                  </svg>
+                  </button>
+                </div>
+        </div>
+    </div>
+    </section> 
+    
+    <!-- Most Wanted -->
+
+    <section id="MostWanted" class="p-4">
+      <h2 class="text-3xl font-bold">Most Wanted</h2>
+      <div class="grid grid-flow-col gap-5">
+        <div class="relative">
+          <img class="border  rounded" src="./images/Most wanted -1.png" alt="">
+          <div class="absolute top-0 left-0 z-1 px-1 py-1" >
+            <p class="rounded p-1 bg-red-600 w-20 text-center text-2xl text-white md:block hidden">Sale</p>
+          </div>
+          <div class="absolute bottom-3 right-10">
+            <img class="border border-none h-8 w-8 md:flex hidden" src="./images/heart.png" alt="">
+          </div>
+        </div>
+        <div class="relative">
+          <img class="border rounded" src="./images/Most wanted -2.png" alt="">
+          <div class="absolute top-0 left-0 z-1 px-1 py-1" >
+            <p class="rounded p-1 bg-red-600 w-20 text-center text-2xl text-white md:block hidden">Sale</p>
+          </div>
+          <div class="absolute bottom-3 right-10">
+            <img class="border border-none h-8 w-8 md:flex hidden" src="./images/heart.png" alt="">
+          </div>
+        </div>
+        <div class="relative" >
+          <img class="border rounded" src="./images/Most wanted - 3.png" alt="">
+          <div class="absolute top-0 left-0 z-1 px-1 py-1" >
+            <p class="rounded p-1 bg-red-600 w-20 text-center text-2xl text-white md:block hidden">Sale</p>
+          </div>
+          <div class="absolute bottom-3 right-10">
+            <img class="border border-none h-8 w-8 md:flex hidden" src="./images/heart.png" alt="">
+          </div>
+        </div>
+        <div class="relative">
+          <img class="border rounded" src="./images/Most wanted - 4.png" alt="">
+          <div class="absolute top-0 left-0 z-1 px-1 py-1" >
+            <p class="rounded p-1 bg-red-600 w-20 text-center text-2xl text-white md:block hidden">Sale</p>
+          </div>
+          <div class="absolute bottom-3 right-10">
+            <img class="border border-none h-8 w-8 md:flex hidden" src="./images/heart.png" alt="">
+          </div>
+        </div>
+        <div class="relative">
+          <img class="border rounded" src="./images/Most wanted - 5.png" alt="">
+          <div class="absolute top-0 left-0 z-1 px-1 py-1" >
+            <p class="rounded p-1 bg-red-600 w-20 text-center text-2xl text-white md:block hidden">Sale</p>
+          </div>
+          <div class="absolute bottom-3 right-10">
+            <img class="border border-none h-8 w-8 md:flex hidden" src="./images/heart.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- Limited offer -->
+ <section class="p-3">
+  <div class="md:text-2xl bg-gray-800 px-6 py-4 flex gap-8  text-white ">
+    <img class="w-1/2 h-full" src="./images/slider-1.jpg" alt="">
+    <div class="px-10 py-10">
+      <h2>Limited Offer</h2>
+      <p>35% OFF on this for the first 30 Customers</p>
+      <div class ="flex flex-col items-center p-1 md:sm sm:sm lg:lg">
+        <button class="flex border border-black rounded shadow-lg pl-2 pr-2 pt-1 pb-1  text-black bg-white">Shop Now<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-3 w-3 ml-1 mt-2 font-bold">
+            <path fill-rule="evenodd" d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+          </svg>
+          </button>
+        </div>
+    </div>
+  </div>
+ </section>
+
+ <!-- News letter -->
+ <section class="text-center flex flex-col justify-between items-center font-bold">
+  <h1 class="text-3xl font-bold mt-5 text-center">Join our News Letter</h1>
+  <p>Signup for our email newspaper to get exclusive discounts, updates and more</p>
+  <input type="text" class="border border-black p-2 m-3" style="width: 80%;"><br>
+  <button class="bg-black text-white p-2 m-1 flex justify-center rounded text-xl">Subscribe<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="md:h-4 w-4 mx-1 my-2 font-bold">
+    <path fill-rule="evenodd" d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+    </svg></button>
+</section>
+<!-- Footer -->
+<section class="bg-gray-800 p-10 flex flex-col gap-5 text-white md:text-2xl font-bold mt-6">
+  <h1 class="text-4xl font-bold">Nostra</h1>
+  <p>The Standard Chunk of Lorem ipsum used since 1500s is reproduced below for those interest</p>
+  <div class="flex gap-20">
+    <img class="h-6 w-6" src="./images/instagram (1).png" alt="">
+    <img class="h-6 w-6" src="./images/twitter (2).png" alt="">
+    <img class="h-6 w-6" src="./images/facebook.png" alt="">
+  </div>
+  <p>@ 2023 Nostra.com</p>
+  
+ </section>
+      <script src="index.js"></script>
+</body>
+</html>

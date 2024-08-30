@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/lib/index.min.js"></script>
+</head>
+<body>
+    <!-- offer bar -->
+    <div id="offer-bar" class="bg-gray-800 text-white p-2 text-xl text-center flex justify-center">
+        <p>Sign Up and <b>Get 20% OFF</b> for your first order
+         <i id="offer-close" class="fa-solid fa-xmark cursor-pointer pl-5"></i></p>
+     </div>
+     <!-- Nav bar -->
+     <nav class="flex gap-5 justify-between items-center px-5 py-[1vw] text-gray-800 sticky top-0 bg-white z-10">
+        <h1 class="text-3xl font-bold ">Nostra</h1>
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        <ul class = " w-1/2 items-center justify-around font-medium cursor-pointer hidden md:flex">
+            <li><a href="index.html" class="hover:underline">Home</a></li>
+                <li><a href="#NewArrival" class="hover:underline">New Arrival</a></li>
+                <li><a href="#MostWanted" class="hover:underline">Most Wanted</a></li>
+                <li><a href="collections.html" class="hover:underline">Collections</a></li>
+                <li><a class="hover:underline" href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <!-- Side Navbar -->
+    <section id="sidenav" class="bg-gray-800 fixed z-20 top-0 transition-all duration-1000" style="width: 50%;height: 100%;left: -50%;">
+        <div class="text-right p-5 text-white">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 items-center text-white">
+            <li>
+                <a class="hover:underline hover:text-white" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-white" href="#NewArrival">New Arrival</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-white" href="#MostWanted">Most Wanted</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-white" href="collections.html">Collections</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-white" href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+      </section>
+
+
+      <!-- Contact form -->
+      <section class="dark:bg-gray-900">
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md bg-gray-800 border rounded-md">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-white dark:text-white">Contact Us</h2>
+            <form action="#" class="space-y-8">
+                <div>
+                    <label for="email" class="block mb-2 text-sm font-medium text-white dark:text-gray-300">Your email</label>
+                    <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@flowbite.com" required>
+                </div>
+                <div>
+                    <label for="subject" class="block mb-2 text-sm font-medium text-white dark:text-gray-300">Subject</label>
+                    <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="message" class="block mb-2 text-sm font-medium text-white dark:text-gray-400">Your message</label>
+                    <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+                </div>
+                <button type="submit" class="bg-blue-600 py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Submit</button>
+            </form>
+        </div>
+      </section>
+
+
+<!-- News letter -->
+<section class="text-center flex flex-col justify-between items-center font-bold">
+    <h1 class="text-3xl font-bold mt-5 text-center">Join our News Letter</h1>
+    <p>Signup for our email newspaper to get exclusive discounts, updates and more</p>
+    <input type="text" class="border border-black p-2 m-3" style="width: 80%;"><br>
+    <button class="bg-black text-white p-2 m-1 flex justify-center rounded text-xl">Subscribe<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="md:h-4 w-4 mx-1 my-2 font-bold">
+      <path fill-rule="evenodd" d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+      </svg></button>
+  </section>
+
+  <!-- Footer -->
+<section class="bg-gray-800 p-10 flex flex-col gap-5 text-white font-bold md:text-2xl mt-6">
+    <h1 class="text-4xl font-bold ">Nostra</h1>
+    <p>The Standard Chunk of Lorem ipsum used since 1500s is reproduced below for those interest</p>
+    <div class="flex gap-20">
+      <img class="h-6 w-6" src="./images/instagram (1).png" alt="">
+      <img class="h-6 w-6" src="./images/twitter (2).png" alt="">
+      <img class="h-6 w-6" src="./images/facebook.png" alt="">
+    </div>
+    <p>@ 2023 Nostra.com</p>
+   </section>
+      
+
+</body>
+</html>
